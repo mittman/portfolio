@@ -1,0 +1,42 @@
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url(OpenSans-Semibold.woff) format('woff');
+}
+@font-face {
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Titillium WebSemiBold'), local('TitilliumWeb-SemiBold'), url(TitilliumWeb-SemiBold.woff) format('woff');
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  border-spacing: 0;
+  border-collapse: collapse;
+  border-left: 10px solid #EBEAE9;
+  border-right: 10px solid #EBEAE9;
+  background-color: #000;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 700;
+  font-size: 2em;
+  color: #FFF;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 2em;
+  color: #FFF;
+}
+
+div {
+  margin: auto;
+  width: 60%
+}
