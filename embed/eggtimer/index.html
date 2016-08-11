@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Eggtimerrs</title>
+<link rel="stylesheet" type="text/css" href="http://justbrowsing.info/justbrowsing-timers/timer.css" />
+<link rel="stylesheet" type="text/css" href="http://justbrowsing.info/justbrowsing-timers/buttons.css" />
+<style>
+body {
+    position: fixed; 
+    top: 0; 
+    left: 0;
+    margin: 0;
+    padding: 0;
+    zoom: 0.5;
+    -moz-transform: scale(0.5);
+}
+</style>
+</head>
+<body onload="resetEgg()">
+<!-- eggtimer -->
+<div class="main">
+	<div class="col">
+		<div id="hourglass">
+			<br><br><br>
+			<h3>Egg Timer</h3>
+			<br><br><br><br><br><br><br>
+			<button class="increment" onclick="addHour()">+H</button>
+			<button class="increment" onclick="addMin()">+M</button>
+			<button class="increment" onclick="addTen()">+S</button>
+			<br><br><br><br><br>
+			<text id="eggtimer">00:05:00.0</text>
+			<br><br><br>
+			<button class="increment" onclick="subHour()">-H</button>
+			<button class="increment" onclick="subMin()">-M</button>
+			<button class="increment" onclick="subTen()">-S</button>
+			<br><br><br><br><br><br>
+			<button class="start" id="eggButton" onclick="eggClock()">Start</button> 
+			<button class="reset" onclick="resetEgg()">Reset</button>
+		</div>
+	</div>
+</div>
+<script src="http://justbrowsing.info/justbrowsing-timers/eggclock.js"></script>
+</body>
+</html>

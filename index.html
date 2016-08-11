@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Welcome</title>
+    <link id="favicon" href="favicon.ico" rel="icon" type="image/x-icon">
+    <link href="css/reset.css" rel="stylesheet">
+
+    <!-- Bootstrap Core CSS -->
+    <link href="libraries/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Plugin CSS -->
+    <link href="libraries/jquery-ui/jquery-ui.min.css" rel="stylesheet">
+    <link href="libraries/jquery-ui/jquery-ui.structure.min.css" rel="stylesheet">
+    <link href="libraries/jquery-ui/jquery-ui.theme.min.css" rel="stylesheet">
+
+    <!-- Theme CSS -->
+    <link href="css/freelancer.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="libraries/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- Custom CSS -->
+    <link href="css/custom.min.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="iecompat/html5shiv.js"></script>
+        <script src="iecompat/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body id="page-top" class="index">
+
+    <!-- Navigation -->
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars">&nbsp;</i>
+                </button>
+                <a class="navbar-brand name" href="#page-top"><i class="fa fa-linux">&nbsp;</i> <i class="fa fa-linux">&nbsp;</i> <i class="fa fa-linux">&nbsp;</i></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="">
+                        <a href="#" id="nav-get"><i class="fa fa-file-pdf-o btn-danger">&#8203;</i> Resume</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#about">About Me</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#projects">Projects</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#skills">Skills</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!-- Header -->
+    <header id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <img src="profile.png" id="avatar" class="circle img-responsive" alt="">
+                    <div class="intro-text">
+                        <span class="name">hirekevin.xyz</span>
+                        <hr class="star-light">
+                        <span class="skills">Software Engineer - Linux Enthusiast - Web Developer</span>
+                        <p><i class="fa fa-mortar-board">&nbsp;</i> Bachelor of Science Degree in Computer Science from California State University, Fullerton (CSUF)</p>
+                        <p><em><span id="announcement">Please enable Javascript</span></em></p>
+                    </div>
+                    <button type="button" id="btn-iframe" class="btn btn-default btn-lg" data-toggle="modal" data-target="#resume"><i class="fa fa-file-text">&nbsp;</i> View Resume</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Portfolio Grid Section -->
+    <section id="projects" class="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Projects</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+            <div class="row">
+
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#jb-livecd" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x">&nbsp;</i>
+                                <span class="caption-text">JustBrowsing LiveCD</span>
+                            </div>
+                        </div>
+                        <img src="img/justbrowzing.png" class="img-responsive" alt="">
+                    </a>
+                </div>
+
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#jb-webapps" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x">&nbsp;</i>
+                                <span class="caption-text">JB Webapps</span>
+                            </div>
+                        </div>
+                        <img src="img/webappz.png" class="img-responsive" alt="">
+                    </a>
+                </div>
+
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#apacman" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x">&nbsp;</i>
+                                <span class="caption-text">apacman</span>
+                            </div>
+                        </div>
+                        <img src="img/apacman.png" class="img-responsive" alt="">
+                    </a>
+                </div>
+
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#guesswhat" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x">&nbsp;</i>
+                                <span class="caption-text">GuessWhat</span>
+                            </div>
+                        </div>
+                        <img src="img/guess-what.png" class="img-responsive" alt="">
+                    </a>
+                </div>
+
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#photothief" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x">&nbsp;</i>
+                                <span class="caption-text">Photothief</span>
+                            </div>
+                        </div>
+                        <img src="img/photo-thief.png" class="img-responsive" alt="">
+                    </a>
+                </div>
+
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#timeme" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x">&nbsp;</i>
+                                <span class="caption-text">TimeMe</span>
+                            </div>
+                        </div>
+                        <img src="img/time-meee.png" class="img-responsive" alt="">
+                    </a>
+                </div>
+
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#backpackerpro" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x">&nbsp;</i>
+                                <span class="caption-text">BackPackerPro</span>
+                            </div>
+                        </div>
+                        <img src="img/bbp-android.png" class="img-responsive" alt="">
+                    </a>
+                </div>
+
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#pycheckmate" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x">&nbsp;</i>
+                                <span class="caption-text">pycheckmate</span>
+                            </div>
+                        </div>
+                        <img src="img/py-checkmate.png" class="img-responsive" alt="">
+                    </a>
+                </div>
+
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#hardware" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x">&nbsp;</i>
+                                <span class="caption-text">Hardware shenanigans</span>
+                            </div>
+                        </div>
+                        <img src="img/hw-shenanigans.png" class="img-responsive" alt="">
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+     <!-- Skills Section -->
+    <section class="success" id="skills">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Skills</h2>
+                    <hr class="star-light">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-5 text-right">
+                    <p><em>Programming</em></p>
+                </div>
+                <div class="col-xs-7">
+                    <p>BASH, C, C++, Java, Python, R, Racket</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-5 text-right">
+                    <p><em>Command-line</em></p>
+                </div>
+                <div class="col-xs-7">
+                    <p>awk, busybox, curl, grep, nano, sed, ssh, etc.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-5 text-right">
+                    <p><em>Web back-end / front-end</em></p>
+                </div>
+                <div class="col-xs-7">
+                    <p>NodeJS, socket.io, Bootstrap, JavaScript, CSS, HTML, XML</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-5 text-right">
+                    <p><em>GUI toolkits</em></p>
+                </div>
+                <div class="col-xs-7">
+                    <p>gtkdialog, pygtk, SWING, SWT, zenity</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-5 text-right">
+                    <p><em>Development tools</em></p>
+                </div>
+                <div class="col-xs-7">
+                    <p>Android Studio, Eclipse, git, gcc/g++, QEMU, Scratchbox</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="footer-above">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col col-md-4">
+                        <h3>Badges</h3>
+                        <p><img src="img/flair.png" alt="flair" /></p>
+                        <p><img src="img/iso.png" alt="shield" /></p>
+                        <p><img src="img/helper.png" alt="shield" /></p>
+                    </div>
+                    <div class="footer-col col-md-4">
+                        <h3>Around the Web</h3>
+                        <ul class="list-inline">
+                            <li>
+                                <a id="gh1" href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-github">&nbsp;</i></a>
+                            </li>
+                            <li>
+                                <a id="gh2" href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-github-alt">&nbsp;</i></a>
+                            </li>
+                            <li>
+                                <a id="gh3" href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-github-square">&nbsp;</i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-col col-md-4">
+                        <h3>More</h3>
+                        <ul class="list-inline">
+                            <li>
+                                <a id="lug" href="#" class="btn btn-default"><i class="fa fa-fw fa-linux fa-5x">&nbsp;</i></a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-below">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        Last updated August 11, 2016
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+    <div class="scroll-top page-scroll hidden-sm hidden-xs hidden-lg hidden-md">
+        <a class="btn btn-primary" href="#page-top">
+            <i class="fa fa-chevron-up">&nbsp;</i>
+        </a>
+    </div>
+
+    <!-- Portfolio Modals -->
+    <div class="portfolio-modal modal fade" id="resume" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <div class="btn-group">
+                              <label class="btn btn-primary active">
+                                <a id="external" href="libraries/pdf-js/web/viewer.html?file=%2F" class="magic" target="_blank"><i class="fa fa-magic">&nbsp;</i> PDF.js</a>
+                              </label>
+                              <label class="btn btn-primary">
+                                <a id="native" href="#" target="_blank"><i class="fa fa-external-link">&nbsp;</i> Native</a>
+                              </label>
+                              <label class="btn btn-primary">
+                                <a id="download" href="#" download><i class="fa fa-download">&nbsp;</i> Download</a>
+                              </label>
+                            </div>
+                            <iframe id="internal" src="#" data-src="libraries/pdf-js/web/viewer.html?file=%2F" class="magic iframe-large"></iframe>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times">&nbsp;</i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- justbrowsing -->
+    <div class="portfolio-modal modal fade" id="jb-livecd" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>JustBrowsing LiveCD</h2>
+                            <hr class="star-primary">
+                            <a class="br0" href="#"><img src="img/justbrowzing.png" class="img-responsive img-centered" alt=""></a>
+                            <p><em>Web browsing made simple. Mozilla Firefox or Google Chrome and that's it.</em></p>
+                            <ul class="list-inline item-details">
+                                <li>
+                                    <a class="br0 btn btn-default" href="#"><i class="fa fa-globe">&nbsp;</i>Homepage</a>
+                                </li>
+                                <li>
+                                    <a class="jb0 btn btn-primary" href="#"><i class="fa fa-github">&nbsp;</i>Github</a>
+                                </li>
+                                <li>
+                                    <a id="yt1" class="btn btn-danger" href="#" target="_blank"><i class="fa fa-youtube">&nbsp;</i>Review</a>
+                                </li>
+                            </ul>
+
+                            <div id="jb-menu" aria-multiselectable="false">
+                                <div class="panel list-group">
+                                    <a href="#" class="list-group-item panel-heading" data-toggle="collapse" data-target="#jb-pane1" data-parent="#jb-menu" aria-expanded="false">
+                                      Worldwide over <span class="label label-info">75k</span> downloads <i class="fa fa-globe pull-right">&nbsp;</i>
+                                    </a>
+                                    <div id="jb-pane1" class="sublinks collapse">
+                                      <a id="sfg" href="#" target="_blank">
+                                        <img src="img/panel/timeline.png" class="panel-img list-group-item small" alt="timeline" />
+                                      </a>
+                                    </div>
+
+                                    <a href="#" class="list-group-item panel-heading" data-toggle="collapse" data-target="#jb-pane2" data-parent="#jb-menu" aria-expanded="false">
+                                      Featured in print magazine <i class="fa fa-external-link pull-right">&nbsp;</i>
+                                    </a>
+                                    <div id="jb-pane2" class="sublinks collapse">
+                                      <a id="lxu" href="#" target="_blank">
+                                        <img src="img/panel/magazines.jpg" class="panel-img list-group-item small" alt="magazines" />
+                                      </a>
+                                    </div>
+
+                                    <a href="#" class="list-group-item panel-heading" data-toggle="collapse" data-target="#jb-pane3" data-parent="#jb-menu" aria-expanded="false">
+                                      Centralized control panel <i class="fa fa-youtube pull-right">&nbsp;</i>
+                                    </a>
+                                    <div id="jb-pane3" class="sublinks collapse">
+                                      <a id="yt2" href="#" target="_blank">
+                                        <img src="img/panel/config.png" class="panel-img list-group-item small" alt="config" />
+                                      </a>
+                                    </div>
+
+                                    <a href="#" class="list-group-item panel-heading" data-toggle="collapse" data-target="#jb-pane4" data-parent="#jb-menu" aria-expanded="false">
+                                      Scripts to save and load settings on boot <i class="fa fa-info pull-right">&nbsp;</i>
+                                    </a>
+                                    <div id="jb-pane4" class="sublinks collapse">
+                                      <a id="tmb" href="#" target="_blank">
+                                        <img src="img/panel/jbusb-cfg.png" class="panel-img list-group-item small" alt="text" />
+                                      </a>
+                                    </div>
+
+                                    <a href="#" class="list-group-item panel-heading" data-toggle="collapse" data-target="#jb-pane5" data-parent="#jb-menu" aria-expanded="false">
+                                      Lock screen with intrusion detection <i class="fa fa-camera pull-right">&nbsp;</i>
+                                    </a>
+                                    <div id="jb-pane5" class="sublinks collapse">
+                                      <a id="br1" href="#" target="_blank">
+                                        <img src="img/panel/intruders.png" class="panel-img list-group-item small" alt="toystory" />
+                                      </a>
+                                    </div>
+
+                                    <a href="#" class="list-group-item panel-heading" data-toggle="collapse" data-target="#jb-pane6" data-parent="#jb-menu" aria-expanded="false">
+                                      Customized browser profiles <i class="fa fa-cogs pull-right">&nbsp;</i>
+                                    </a>
+                                    <div id="jb-pane6" class="sublinks collapse">
+                                      <a id="br2" href="#" target="_blank">
+                                        <img src="img/panel/bookmarks.png" class="panel-img list-group-item small" alt="bookmarks" />
+                                      </a>
+                                    </div>
+
+                                    <a href="#" class="list-group-item panel-heading" data-toggle="collapse" data-target="#jb-pane7" data-parent="#jb-menu" aria-expanded="false">
+                                      Supports over 30 languages and locales <i class="fa fa-language pull-right">&nbsp;</i>
+                                    </a>
+                                    <div id="jb-pane7" class="sublinks collapse">
+                                      <a id="br3" href="#" target="_blank">
+                                        <img src="img/panel/languages.png" class="panel-img list-group-item small" alt="locales" />
+                                      </a>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <p class="interval">Date: <strong><a href="#">Dec 2012 - Feb 2015</a></strong></p>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times">&nbsp;</i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- webapps -->
+    <div class="portfolio-modal modal fade" id="jb-webapps" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>JB Webapps</h2>
+                            <hr class="star-primary">
+                            <p><em>HTML5 utilities - calculator, wageclock, stopwatch, eggtimer</em></p>
+
+                            <div class="framewrap">
+                              <iframe src="embed/calc/" class="iframe-small" scrolling="no"></iframe>
+                              <a class="jb1 framelabel btn btn-primary" target="_blank" href="#">
+                                <i class="fa fa-code">&nbsp;</i>
+                              </a>
+                            </div>
+                            <div class="framewrap">
+                              <iframe src="embed/wageclock/" class="iframe-small" scrolling="no"></iframe>
+                              <a class="jb2 framelabel btn btn-primary" target="_blank" href="#">
+                                <i class="fa fa-code">&nbsp;</i>
+                              </a>
+                            </div>
+                            <div class="framewrap">
+                              <iframe src="embed/stopwatch/" class="iframe-medium" scrolling="no"></iframe>
+                              <a class="jb3 framelabel btn btn-primary" target="_blank" href="#">
+                                <i class="fa fa-code">&nbsp;</i>
+                              </a>
+                            </div>
+                            <div class="framewrap">
+                              <iframe src="embed/eggtimer/" class="iframe-medium" scrolling="no"></iframe>
+                              <a class="jb3 framelabel btn btn-primary" target="_blank" href="#">
+                                <i class="fa fa-code">&nbsp;</i>
+                              </a>
+                            </div>
+
+                            <p class="interval">Date: <strong><a href="#">Jan 2012 - Jan 2014</a></strong></p>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times">&nbsp;</i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- apacman -->
+    <div class="portfolio-modal modal fade" id="apacman" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>apacman</h2>
+                            <hr class="star-primary">
+                            <img src="img/apacman.png" class="img-responsive img-centered" alt="">
+                            <p><em>ArchLinux User Repository (AUR) package manager written in BASH</em></p>
+
+                            <ul class="list-inline item-details">
+                                <li>
+                                    <a class="aur btn btn-default" href="#"><i class="fa fa-archive">&nbsp;</i>AUR</a>
+                                </li>
+                                <li>
+                                    <a id="op1" href="#" class="btn btn-primary"><i class="fa fa-github">&nbsp;</i>Github</a>
+                                </li>
+                            </ul>
+
+                            <p class="interval">Date: <strong><a href="#">Sep 2013 - May 2016</a></strong></p>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times">&nbsp;</i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- guesswhat -->
+    <div class="portfolio-modal modal fade" id="guesswhat" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>GuessWhat</h2>
+                            <hr class="star-primary">
+                            <a class="ngc" href="#"><img src="img/guess-what.png" class="img-responsive img-centered" alt=""></a>
+                            <p><em>Pictionary-like drawing and word guessing multiplayer game</em></p>
+
+                            <ul class="list-inline item-details">
+                                <li>
+                                    <a class="ngc btn btn-default" href="#"><i class="fa fa-gamepad">&nbsp;</i>Demo</a>
+                                </li>
+                                <li>
+                                    <a id="op2" href="#" class="btn btn-primary"><i class="fa fa-github">&nbsp;</i>Github</a>
+                                </li>
+                            </ul>
+
+                            <div id="gw-menu" aria-multiselectable="false">
+                                <div class="panel list-group">
+                                    <span class="list-group-item panel-heading">
+                                      Built with <span class="label label-success">nodeJS</span> backend <i class="fa fa-server pull-right">&nbsp;</i>
+                                    </span>
+                                    <span class="list-group-item panel-heading">
+                                      Game data stored in <span class="label label-danger">Redis</span> NoSQL database <i class="fa fa-database pull-right">&nbsp;</i>
+                                    </span>
+                                    <span class="list-group-item panel-heading">
+                                      Chat implemented with <span class="label label-info">socket.io</span> messaging <i class="fa fa-comments-o pull-right">&nbsp;</i>
+                                    </span>
+                                    <span class="list-group-item panel-heading">
+                                      Typing indicator via <span class="label label-warning">Knockout</span> <i class="fa fa-keyboard-o pull-right">&nbsp;</i>
+                                    </span>
+                                    <span class="list-group-item panel-heading">
+                                      Minimal <span class="label label-default">Bootstrap</span> layout with custom theming <i class="fa fa-bars pull-right">&nbsp;</i>
+                                    </span>
+                                    <span class="list-group-item panel-heading">
+                                      Words selected from DataMuse's JSON <span class="label label-primary">API</span> <i class="fa fa-filter pull-right">&nbsp;</i>
+                                    </span>
+                                    <span class="list-group-item panel-heading">
+                                      Definitions fetched from Onelook's XML <span class="label label-primary">API</span> <i class="fa fa-filter pull-right">&nbsp;</i>
+                                    </span>
+                                    <span class="list-group-item panel-heading">
+                                      Sketching with Html5 canvas <i class="fa fa-pencil-square-o pull-right">&nbsp;</i>
+                                    </span>
+                                </div>
+                            </div>
+
+                            <p class="interval">Date: <strong><a href="#">Apr 2016 - May 2016</a></strong></p>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times">&nbsp;</i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- photothief -->
+    <div class="portfolio-modal modal fade" id="photothief" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Photothief</h2>
+                            <hr class="star-primary">
+                            <img src="img/photo-thief.png" class="img-responsive img-centered" alt="">
+                            <p><em>Photo sharing blackmail site (April Fools)</em></p>
+
+                            <ul class="list-inline item-details">
+                                <li>
+                                    <a href="#" class="btn btn-default" disabled><i class="fa fa-picture-o">&nbsp;</i>Demo</a>
+                                </li>
+                                <li>
+                                    <a id="op3" href="#" class="btn btn-primary"><i class="fa fa-github">&nbsp;</i>Github</a>
+                                </li>
+                            </ul>
+
+                            <div id="pt-menu" aria-multiselectable="false">
+                                <div class="panel list-group">
+                                    <span class="list-group-item panel-heading">
+                                      Built with <span class="label label-success">nodeJS</span> backend <i class="fa fa-server pull-right">&nbsp;</i>
+                                    </span>
+                                    <span class="list-group-item panel-heading">
+                                      User data stored in <span class="label label-danger">json-server</span> fake REST API database <i class="fa fa-database pull-right">&nbsp;</i>
+                                    </span>
+                                    <span class="list-group-item panel-heading">
+                                      Minimal <span class="label label-default">Bootstrap</span> layout with custom theming <i class="fa fa-bars pull-right">&nbsp;</i>
+                                    </span>
+                                </div>
+                            </div>
+
+                            <p class="interval">Date: <strong><a href="#">Feb 2016 - Apr 2016</a></strong></p>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times">&nbsp;</i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- timeme -->
+    <div class="portfolio-modal modal fade" id="timeme" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>TimeMe</h2>
+                            <hr class="star-primary">
+                            <img src="img/time-meee.png" class="img-responsive img-centered" alt="">
+                            <p><em>Task tracking application written in Java SWT</em></p>
+
+                            <ul class="list-inline item-details">
+                                <li>
+                                    <a id="swt" href="#" class="btn btn-default"><i class="fa fa-archive">&nbsp;</i>JAR</a>
+                                </li>
+                                <li>
+                                    <a id="goo" href="#" class="btn btn-primary"><i class="fa fa-code">&nbsp;</i>Google Code</a>
+                                </li>
+                            </ul>
+
+                            <p class="interval">Date: <strong><a href="#">Mar 2012 - May 2012</a></strong></p>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times">&nbsp;</i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- backpackerpro -->
+    <div class="portfolio-modal modal fade" id="backpackerpro" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>BackPackerPro</h2>
+                            <hr class="star-primary">
+                            <img src="img/bbp-android.png" class="img-responsive img-centered" alt="">
+                            <p><em>Android app prototype with map and itinerary views</em></p>
+
+                            <ul class="list-inline item-details">
+                                <li>
+                                    <a id="bp2" href="#" class="btn btn-default"><i class="fa fa-archive">&nbsp;</i>APK</a>
+                                </li>
+                                <li>
+                                    <a id="bp1" href="#" class="btn btn-primary"><i class="fa fa-github">&nbsp;</i>Github</a>
+                                </li>
+                            </ul>
+
+                            <p class="interval">Date: <strong><a href="#">May 2016</a></strong></p>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times">&nbsp;</i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- pycheckmate -->
+    <div class="portfolio-modal modal fade" id="pycheckmate" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>pycheckmate</h2>
+                            <hr class="star-primary">
+                            <img src="img/py-checkmate.png" class="img-responsive img-centered" alt="">
+                            <p><em>Python chess end-game AI</em></p>
+
+                            <ul class="list-inline item-details">
+                                <li>
+                                    <a id="pyc" href="#" class="btn btn-primary"><i class="fa fa-github">&nbsp;</i>Github</a>
+                                </li>
+                            </ul>
+
+                            <p class="interval">Date: <strong><a href="#">Sep 2015 - Oct 2015</a></strong></p>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times">&nbsp;</i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- hardware -->
+    <div class="portfolio-modal modal fade" id="hardware" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Hardware shenanigans</h2>
+                            <hr class="star-primary">
+                            <img src="img/hw-shenanigans.png" class="img-responsive img-centered" alt="">
+                            <p><em>Adventures in soldering, epoxy, wardriving and more</em></p>
+
+                            <div id="hw-menu" aria-multiselectable="false">
+                                <div class="panel list-group">
+                                    <span class="list-group-item panel-heading">
+                                      War-walking with <span class="label label-info">Maemo</span> tablet <i class="fa fa-wifi pull-right">&nbsp;</i>
+                                    </span>
+                                    <span class="list-group-item panel-heading">
+                                      Modular bay caddy <span class="label label-primary">mod</span> for hard drive <i class="fa fa-hdd-o pull-right">&nbsp;</i>
+                                    </span>
+                                    <span class="list-group-item panel-heading">
+                                      USB <span class="label label-warning">power</span> voltage tester <i class="fa fa-usb pull-right">&nbsp;</i>
+                                    </span>
+                                    <span class="list-group-item panel-heading">
+                                      Portable <span class="label label-danger">Raspberry Pi</span> with Atrix lapdock <i class="fa fa-laptop pull-right">&nbsp;</i>
+                                    </span>
+                                    <span class="list-group-item panel-heading">
+                                      Setup <span class="label label-default">covert</span> wired-to-wifi AP for rsync <i class="fa fa-user-secret pull-right">&nbsp;</i>
+                                    </span>
+                                </div>
+                            </div>
+
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times">&nbsp;</i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- counter -->
+    <script type="text/javascript">var sc_project=10630129; var sc_invisible=1; var sc_security="afdcf9ec";
+    var scJsHost = (("https:" == document.location.protocol) ? "https://secure." : "http://www.");
+    document.write("<sc"+"ript type='text/javascript' src='" + scJsHost+ "statcounter.com/counter/counter.js'></"+"script>"); </script>
+    <noscript><div class="statcounter"><img class="statcounter" src="http://c.statcounter.com/10630129/0/afdcf9ec/1/" alt="count" /></div></noscript>
+
+    <!-- jQuery -->
+    <script src="libraries/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="libraries/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="libraries/jquery-easing/jquery.easing.min.js"></script>
+    <script src="libraries/jquery-ui/jquery-ui.min.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/freelancer.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="js/browser.min.js"></script>
+
+</body>
+</html>

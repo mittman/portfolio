@@ -1,0 +1,105 @@
+/*!
+ * Custom styles (http://hirekevin.xyz)
+ */
+
+.iframe-small {
+  width: 200px;
+  height: 260px;
+}
+
+.iframe-medium {
+  width: 230px;
+  height: 280px;
+}
+
+.iframe-large {
+  width: 100%;
+  height: 700px;
+}
+
+.framewrap {
+  display: inline-block;
+  zoom: 1;
+  border-radius: 25px;
+  border: 2px solid #2DBC9C;
+  margin: 0 5px 5px 0;
+  padding: 10px;
+  background: #2DBC9C;
+  background: rgba(45, 188, 156, 0.2);
+  width: 320px;
+  height: 320px;
+  cursor: move;
+}
+
+.circle {
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 5px;
+  border-color: #FFF;
+  transition: all .2s ease-in-out;
+}
+
+.circle:hover {
+  border-color: #579DEB;
+  transform: scale(1.1);
+}
+
+.sublinks {
+  background-color: #D4D4D4;
+}
+
+.panel-img {
+  max-width: 95%;
+  max-height: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+em {
+  font-style: italic;
+}
+
+.interval {
+  font-size: 14px;
+}
+
+a.list-group-item:hover {
+  background-color: #C7E7F0;
+}
+
+.list-group-item:hover {
+  background-color: #2DBC9C;
+}
+
+/* override theme */
+header, .success {
+  background: #579DEB;
+}
+
+.star-light:after {
+  background-color: #579DEB;
+}
+
+hr.star-primary {
+  border-color: #265482;
+}
+
+hr.star-primary:after {
+  color: #265482;
+}
+
+.navbar-custom {
+  background: #265482;
+}
+
+.navbar-custom .navbar-nav li.active a,
+.navbar-custom .navbar-nav li.active a:hover,
+.navbar-custom .navbar-nav li.active a:focus,
+.navbar-custom .navbar-nav li.active a:active {
+  background: #18B3F2;
+}
+
+.navbar-custom .navbar-toggle:hover,
+.navbar-custom .navbar-toggle:focus {
+  background-color: #18B3F2;
+}
