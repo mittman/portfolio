@@ -1,0 +1,4 @@
+html=("index.html")
+css=("css/custom-*.css")
+js=("js/browser-*.js")
+

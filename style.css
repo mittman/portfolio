@@ -2,13 +2,13 @@
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 600;
-  src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url(OpenSans-Semibold.woff) format('woff');
+  src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url(fonts/OpenSans-Semibold.woff) format('woff');
 }
 @font-face {
   font-family: 'Titillium Web';
   font-style: normal;
   font-weight: 600;
-  src: local('Titillium WebSemiBold'), local('TitilliumWeb-SemiBold'), url(TitilliumWeb-SemiBold.woff) format('woff');
+  src: local('Titillium WebSemiBold'), local('TitilliumWeb-SemiBold'), url(fonts/TitilliumWeb-SemiBold.woff) format('woff');
 }
 
 body {
