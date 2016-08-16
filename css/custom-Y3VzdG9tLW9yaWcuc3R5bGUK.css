@@ -22,8 +22,6 @@
   zoom: 1;
   border-radius: 25px;
   border: 2px solid #2DBC9C;
-  margin: 0 5px 5px 0;
-  padding: 10px;
   background: #2DBC9C;
   background: rgba(45, 188, 156, 0.2);
   width: 320px;
@@ -72,11 +70,12 @@ a.list-group-item:hover {
 }
 
 /* override theme */
-header, .success {
+header,
+section.success {
   background: #579DEB;
 }
 
-.star-light:after {
+hr.star-light:after {
   background-color: #579DEB;
 }
 
