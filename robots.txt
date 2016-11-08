@@ -2,4 +2,7 @@ User-agent: *
 Disallow: /embed/
 Disallow: /img/
 Disallow: /files/
+Disallow: /css/
+Disallow: /js/
+Disallow: /libraries/
 Disallow: /*.pdf$
