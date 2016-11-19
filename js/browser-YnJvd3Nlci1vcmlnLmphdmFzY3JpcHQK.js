@@ -12,6 +12,7 @@ var main = function() {
     var lx1 = "aHR0cDovL3d3dy5saW51eC1jb21tdW5pdHkuZGUvaW5kZXgucGhwL0ludGVybmFsL0FydGlrZWwvUHJpbnQtQXJ0aW";
     var lx2 = "tlbC9MaW51eFVzZXIvMjAxNC8wNS9NaXQtSnVzdC1Ccm93c2luZy1zcHVybG9zLWltLUludGVybmV0LXN1cmZlbgo=";
     var nan = [ "aHR0cDovL2d1ZXNzLXdoYXQuY2ZhcHBzLmlvCg==", "aHR0cHM6Ly9hdXIuYXJjaGxpbnV4Lm9yZy9wYWNrYWdlcy9hcGFjbWFuLwo=" ];
+    var tpi = [ "aHR0cHM6Ly9taXR0bWFuLmdpdGh1Yi5pby9weWNoZWNrbWF0ZQo", "aHR0cHM6Ly9waG90by10aGllZi5oZXJva3VhcHAuY29tCg==" ];
     var ytb = [ "aHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g/dj1", "sanEwZlN5UEZvNAo=", "FZXdGR1pEUk1IQQo=" ];
     var ops = [ "9zaGF6YXJkL2FwYWNtYW4K", "05lZW51QVZhcmdoZXNlL", "2d1ZXNzd2hhdAo=", "3Bob3RvdGhpZWYK" ];
     var pwz = [ "1pdHRtYW4v", "cHljaGVja21hdGUK", "QmFja1BhY2tlclBybwo=", "L3Jhdy9tYXN0ZXIvQmFja1BhY2tlclByby12MS5hcGsK" ];
@@ -85,6 +86,8 @@ var main = function() {
 
     $(".ngc").attr("href", decodeBase64(nan[0]));
     $("#aur").attr("href", decodeBase64(nan[1]));
+    $(".pyt").attr("href", decodeBase64(tpi[0]));
+    $(".hpt").attr("href", decodeBase64(tpi[1]));
 
     $("#lxu").attr("href", decodeBase64(lx1 + lx2));
     $("#sfg").attr("href", decodeBase64(sfg));
