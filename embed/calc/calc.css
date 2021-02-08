@@ -1,0 +1,367 @@
+@font-face {
+	font-family: 'JB-Digital';
+	src: local('JB-Digital'), url('jb-digital.ttf') format('truetype');
+}
+
+body, html {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+table.columns {
+	width: 100%;
+	height: 100%;
+}
+
+td.columns {
+	width: 33%;
+}
+
+.clear { clear:both; font-family: 'JB-Digital'; }
+
+#floater {
+	float: left;
+	height: 50%;
+	width: 100%;
+	min-height: 229px;
+	margin-bottom: -229px;
+}
+
+#calculator {
+	position: relative;
+	clear: both;
+	width: 360px;
+	height: 458px;
+	margin: 0 auto;
+	
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	border-radius: 10px;
+	
+	-webkit-box-shadow: 5px 5px 16px rgba(0,0,0,0.6);
+	-moz-box-shadow: 5px 5px 16px rgba(0,0,0,0.6);
+	-ms-box-shadow: 5px 5px 16px rgba(0,0,0,0.6);
+	-o-box-shadow: 5px 5px 16px rgba(0,0,0,0.6);
+	box-shadow: 5px 5px 16px rgba(0,0,0,0.6);
+	
+	-webkit-transform: rotate(0);
+	-moz-transform: rotate(0);
+	-ms-transform: rotate(0);
+	-o-transform: rotate(0);
+	transform: rotate(0);
+	
+	-webkit-transition: -webkit-transform 0.5s;
+	-moz-transition: -moz-transform 0.5s;
+	-ms-transition: -ms-transform 0.5s;
+	-o-transition: -o-transform 0.5s;
+	transition: transform 0.5s;
+}
+
+#calculator.flipped {
+	-webkit-transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	-o-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
+
+header {
+	background: #222;
+	padding: 15px;
+	text-align: center;
+	border: 3px solid black;
+	border-top-color: rgba(255,255,255,0.2);
+	border-left-color: rgba(255,255,255,0.2);
+	
+	-webkit-border-radius: 10px 10px 0 0;
+	-moz-border-radius: 10px 10px 0 0;
+	-ms-border-radius: 10px 10px 0 0;
+	-o-border-radius: 10px 10px 0 0;
+	border-radius: 10px 10px 0 0;
+}
+
+header p {
+	color: white;
+	font-family: arial;
+	font-weight: bold;
+	font-size: 20px;
+	display: block;
+	float:left;
+	height: 28px;
+	line-height: 34px;
+	margin: 0;
+}
+
+.buttons {
+	background: #aab;
+	padding: 15px;
+	border: 3px solid rgba(0,0,0,0.4);
+	border-top: 0;
+	border-left-color: rgba(255,255,255,0.4);
+	-webkit-border-radius: 0 0 10px 10px;
+	-moz-border-radius: 0 0 10px 10px;
+	-ms-border-radius: 0 0 10px 10px;
+	-o-border-radius: 0 0 10px 10px;
+	border-radius: 0 0 10px 10px;
+}
+
+#display, #displaypanel {
+	clear: both;
+	border: 2px solid #000;
+	border-bottom-color: #444;
+	border-right-color: #444;
+	background: #575;
+	margin: 0 auto;
+	font-family: JB-Digital;
+	text-align: right;
+	font-size: 58px;
+	padding: 2px;
+	color: rgba(0,0,0,0.5);
+	line-height: 41px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-ms-border-radius: 3px;
+	-o-border-radius: 3px;
+	border-radius: 3px;
+	height: 41px;
+}
+
+#displaypanel {
+	position: relative;
+	color: rgba(0,0,0,0.2);
+}
+#display {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: transparent;
+	border: 0;
+	width: 316px;
+}
+
+::selection {background: transparent;}
+::-moz-selection {background: transparent;}
+#display::selection {color: rgba(255,255,255,0.3);}
+#display::-moz-selection {color: rgba(255,255,255,0.3);}
+
+fieldset { border: 0; margin: 0; padding: 0px; float: left; }
+
+#numbers {
+	width: 190px;
+}
+
+button {
+	background: #141414; /* Old browsers */
+	background: -moz-radial-gradient(center, ellipse cover, #141414 12%, #1c1c1c 48%, #2d2d2d 100%); /* FF3.6+ */
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(12%,#141414), color-stop(48%,#1c1c1c), color-stop(100%,#2d2d2d)); /* Chrome,Safari4+ */
+	background: -webkit-radial-gradient(center, ellipse cover, #141414 12%,#1c1c1c 48%,#2d2d2d 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-radial-gradient(center, ellipse cover, #141414 12%,#1c1c1c 48%,#2d2d2d 100%); /* Opera 12+ */
+	background: -ms-radial-gradient(center, ellipse cover, #141414 12%,#1c1c1c 48%,#2d2d2d 100%); /* IE10+ */
+	background: radial-gradient(ellipse at center, #141414 12%,#1c1c1c 48%,#2d2d2d 100%); /* W3C */
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	-ms-border-radius: 7px;
+	-o-border-radius: 7px;
+	border-radius: 7px;
+	text-align: center;
+	line-height: 50px;
+	
+	
+	border: 0;
+	border-top: 2px solid rgba(255,255,255,0.2);
+	border-left: 2px solid rgba(255,255,255,0.2);
+	border-bottom: 2px solid rgba(0,0,0,0.2);
+	border-right: 2px solid rgba(0,0,0,0.2);
+	margin: 4px;
+	
+	-webkit-box-shadow: -2px -2px 1px #000, -2px 2px 1px #000, 2px -2px 1px #000, 2px 2px 1px #000, 4px 4px 2px rgba(255,255,255,0.6);
+	-moz-box-shadow: -2px -2px 1px #000, -2px 2px 1px #000, 2px -2px 1px #000, 2px 2px 1px #000, 4px 4px 2px rgba(255,255,255,0.6);
+	-ms-box-shadow: -2px -2px 1px #000, -2px 2px 1px #000, 2px -2px 1px #000, 2px 2px 1px #000, 4px 4px 2px rgba(255,255,255,0.6);
+	-o-box-shadow: -2px -2px 1px #000, -2px 2px 1px #000, 2px -2px 1px #000, 2px 2px 1px #000, 4px 4px 2px rgba(255,255,255,0.6);
+	box-shadow: -2px -2px 1px #000, -2px 2px 1px #000, 2px -2px 1px #000, 2px 2px 1px #000, 4px 4px 2px rgba(255,255,255,0.6);
+	
+	display: block;
+	float: left;	
+	font-size: 26px;
+	font-weight: bold;
+	cursor: pointer;
+	color: #ccc;
+	font-family: verdana;
+	padding: 0;
+}
+
+button.red {
+	background: #870000; /* Old browsers */
+	background: -moz-radial-gradient(center, ellipse cover, #870000 26%, #b20000 83%, #c10000 100%); /* FF3.6+ */
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(26%,#870000), color-stop(83%,#b20000), color-stop(100%,#c10000)); /* Chrome,Safari4+ */
+	background: -webkit-radial-gradient(center, ellipse cover, #870000 26%,#b20000 83%,#c10000 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-radial-gradient(center, ellipse cover, #870000 26%,#b20000 83%,#c10000 100%); /* Opera 12+ */
+	background: -ms-radial-gradient(center, ellipse cover, #870000 26%,#b20000 83%,#c10000 100%); /* IE10+ */
+	background: radial-gradient(ellipse at center, #870000 26%,#b20000 83%,#c10000 100%); /* W3C */
+}
+
+button.grey {
+	background: #292929; /* Old browsers */
+	background: -moz-radial-gradient(center, ellipse cover, #292929 12%, #383838 48%, #5C5C5C 100%); /* FF3.6+ */
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(12%,#292929), color-stop(48%,#383838), color-stop(100%,#5C5C5C)); /* Chrome,Safari4+ */
+	background: -webkit-radial-gradient(center, ellipse cover, #292929 12%,#383838 48%,#5C5C5C 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-radial-gradient(center, ellipse cover, #292929 12%,#383838 48%,#5C5C5C 100%); /* Opera 12+ */
+	background: -ms-radial-gradient(center, ellipse cover, #292929 12%,#383838 48%,#5C5C5C 100%); /* IE10+ */
+	background: radial-gradient(ellipse at center, #292929 12%,#383838 48%,#5C5C5C 100%); /* W3C */
+}
+
+button:active, button.down {
+	margin: 5px 3px 3px 5px;
+	-webkit-box-shadow: -3px -3px 1px #000, -3px 1px 1px #000, 1px -3px 1px #000, 1px 1px 1px #000, 3px 3px 2px rgba(255,255,255,0.6);
+	-moz-box-shadow: -3px -3px 1px #000, -3px 1px 1px #000, 1px -3px 1px #000, 1px 1px 1px #000, 3px 3px 2px rgba(255,255,255,0.6);
+	-ms-box-shadow: -3px -3px 1px #000, -3px 1px 1px #000, 1px -3px 1px #000, 1px 1px 1px #000, 3px 3px 2px rgba(255,255,255,0.6);
+	-o-box-shadow: -3px -3px 1px #000, -3px 1px 1px #000, 1px -3px 1px #000, 1px 1px 1px #000, 3px 3px 2px rgba(255,255,255,0.6);
+	box-shadow: -3px -3px 1px #000, -3px 1px 1px #000, 1px -3px 1px #000, 1px 1px 1px #000, 3px 3px 2px rgba(255,255,255,0.6);
+	padding: 0;
+}
+
+button:hover, button.highlight {
+	-webkit-text-shadow: 0 0 5px rgba(255,255,220,0.6);
+	-moz-text-shadow: 0 0 5px rgba(255,255,220,0.6);
+	-ms-text-shadow: 0 0 5px rgba(255,255,220,0.6);
+	-o-text-shadow: 0 0 5px rgba(255,255,220,0.6);
+	text-shadow: 0 0 5px rgba(255,255,220,0.6);
+}
+
+#solar {
+	background: #53463B;
+	width: 90px;
+	height: 24px;
+	border: 2px solid #000;
+	border-right-color: #444;
+	border-bottom-color: #444;
+	float: right;
+	margin: 0 0 2px 0;
+}
+#solar ul {margin:0; padding: 0px; list-style: none;}
+
+#solar li {
+	background: #3F3730;
+	width: 20px;
+	height: 20px;
+	display: block;
+	float: left;
+	margin: 2px 0 0 2px;
+}
+
+#commands {
+width: 60px;
+float: right;
+}
+
+.number {
+	width: 54px;
+	height: 54px;
+}
+
+.number.dw {
+	width: 116px;
+}
+
+.command { width: 54px; height: 54px; }
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { *zoom: 1; }
+
+font.kbd {
+	padding: 0.1em 0.6em;
+	border: 1px solid #ccc;
+	font-size: 11px;
+	font-family: arial;
+	background-color: #f7f7f7;
+	color: #333;
+	-moz-box-shadow: 0 1px 0px rgba(0, 0, 0, 0.2),0 0 0 2px #ffffff inset;
+	-webkit-box-shadow: 0 1px 0px rgba(0, 0, 0, 0.2),0 0 0 2px #ffffff inset;
+	box-shadow: 0 1px 0px rgba(0, 0, 0, 0.2),0 0 0 2px #ffffff inset;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	display: inline-block;
+	margin: 0 0.1em;
+	text-shadow: 0 1px 0 #fff;
+	line-height: 1.4;
+	white-space: nowrap;
+}
+
+/* http://cssdeck.com/labs/full/css3-toggle-switch */
+input.switch:empty {
+	margin-left: -999px;
+}
+
+input.switch:empty ~ label {
+	position: relative;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+input.switch:empty ~ label:before, 
+input.switch:empty ~ label:after {
+	position: absolute;
+	display: block;
+	top: 0;
+	bottom: 0;
+	left: 16em;
+	content: '';
+	width: 3.6em;
+    height: 1.3em;
+	background-color: #c33;
+	border-radius: 0.3em;
+	box-shadow: inset 0 0.2em 0 rgba(0,0,0,0.3);
+	-webkit-transition: all 100ms ease-in;
+    transition: all 100ms ease-in;
+}
+
+input.switch:empty ~ label:after {
+	width: 1.4em;
+	top: 0.1em;
+	bottom: 0.1em;
+	margin-left: 0.1em;
+	background-color: #fff;
+	border-radius: 0.25em;
+	box-shadow: inset 0 -0.2em 0 rgba(0,0,0,0.2);
+}
+
+input.switch:checked ~ label:before {
+	background-color: #999;
+}
+
+input.switch:checked ~ label:after {
+	margin-left: 2.1em;
+}
+
+input.switch:checked ~ .hints {
+    visibility: hidden;
+	height: 300px; 
+}
+
+.title {
+	padding-left: 50px;
+	font-family: arial;
+
+}
+
+/* http://stackoverflow.com/questions/5113246/make-div-invisible-in-css-and-javascript */
+.hints {
+	font-family: arial;
+	visibility: visible;
+    background: #FFFFCC !important;
+	margin-left: 30px;
+	padding: 15px 0 30px 30px;
+	height: 300px; 
+	width: 320px;
+	-webkit-transform:rotate(-2deg);
+	-o-transform:rotate(-2deg);
+	-moz-transform:rotate(-2deg);
+	box-shadow:2px 15px 5px rgba(0, 0, 0, 0.40);
+}

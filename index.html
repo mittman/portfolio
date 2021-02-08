@@ -23,7 +23,7 @@
     <link href="css/freelancer.min.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="libraries/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="libraries/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 
@@ -78,7 +78,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <img src="profile.png" id="avatar" class="circle img-responsive" alt="">
+                    <span>
+                        <i id="you-spin-me-round" class="circle fa fa-spinner fa-pulse fa-fw" style="font-size: 15em;"></i>
+                        <img id="avatar" class="img-responsive" alt="">
+                    </span>
                     <div class="intro-text">
                         <span class="name">hirekevin.xyz</span>
                         <hr class="star-light">
@@ -102,6 +105,42 @@
                 </div>
             </div>
             <div class="row">
+
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#scheduler" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x">&nbsp;</i>
+                                <span class="caption-text">Scheduler</span>
+                            </div>
+                        </div>
+                        <img src="img/sche-duler.png" class="img-responsive" alt="">
+                    </a>
+                </div>
+
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#precompiled" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x">&nbsp;</i>
+                                <span class="caption-text">Precompiled kmod</span>
+                            </div>
+                        </div>
+                        <img src="img/pre-compiled.png" class="img-responsive" alt="">
+                    </a>
+                </div>
+
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#shipit" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x">&nbsp;</i>
+                                <span class="caption-text">ShipIt</span>
+                            </div>
+                        </div>
+                        <img src="img/shi-pi-t.png" class="img-responsive" alt="">
+                    </a>
+                </div>
 
                 <div class="col-sm-4 portfolio-item">
                     <a href="#jb-livecd" class="portfolio-link" data-toggle="modal">
@@ -229,7 +268,7 @@
                     <p><em>Programming</em></p>
                 </div>
                 <div class="col-xs-7">
-                    <p>BASH, C, C++, Java, Python, R, Racket</p>
+                    <p>BASH, Perl, C++, Java, Python, R</p>
                 </div>
             </div>
             <div class="row">
@@ -245,7 +284,7 @@
                     <p><em>Web back-end / front-end</em></p>
                 </div>
                 <div class="col-xs-7">
-                    <p>NodeJS, socket.io, Bootstrap, JavaScript, CSS, HTML, XML</p>
+                    <p>NodeJS, socket.io, Bootstrap, JavaScript, CSS, HTML, JSON</p>
                 </div>
             </div>
             <div class="row">
@@ -261,7 +300,7 @@
                     <p><em>Development tools</em></p>
                 </div>
                 <div class="col-xs-7">
-                    <p>Android Studio, Eclipse, git, gcc/g++, QEMU, Scratchbox</p>
+                    <p>Android Studio, Eclipse, git, gcc/g++, Meld, Perforce, QEMU, Scratchbox</p>
                 </div>
             </div>
         </div>
@@ -279,7 +318,7 @@
                         <p><img src="img/helper.png" alt="shield" /></p>
                     </div>
                     <div class="footer-col col-md-4">
-                        <h3>Around the Web</h3>
+                        <h3>GitHub</h3>
                         <ul class="list-inline">
                             <li>
                                 <a id="gh1" href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-github">&nbsp;</i></a>
@@ -290,10 +329,13 @@
                             <li>
                                 <a id="gh3" href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-github-square">&nbsp;</i></a>
                             </li>
+                            <li>
+                                <a id="gh4" href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-github">&nbsp;</i></a>
+                            </li>
                         </ul>
                     </div>
                     <div class="footer-col col-md-4">
-                        <h3>More</h3>
+                        <h3>LUG</h3>
                         <ul class="list-inline">
                             <li>
                                 <a id="lug" href="#" class="btn btn-default"><i class="fa fa-fw fa-linux fa-5x">&nbsp;</i></a>
@@ -308,7 +350,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        Last updated October 10, 2020
+                        Last updated February 7, 2021
                     </div>
                 </div>
             </div>
@@ -355,9 +397,140 @@
         </div>
     </div>
 
+    <!-- scheduler -->
+    <div class="portfolio-modal modal fade" id="scheduler" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="previous-modal" data-toggle="modal" data-dismiss="modal" data-target="#hardware">
+                <i class="fa fa-angle-left fa-5x"></i>
+            </div>
+
+            <div class="next-modal" data-toggle="modal" data-dismiss="modal" data-target="#precompiled">
+                <i class="fa fa-angle-right fa-5x"></i>
+            </div>
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Scheduler</h2>
+                            <hr class="star-primary">
+                            <img src="img/sche-duler.png" class="img-responsive img-centered" alt="">
+                            <p><em>WebUI for scheduling automated postings</em></p>
+
+                            <ul class="list-inline item-details">
+                                <li>
+                                    <a href="#" class="btn btn-primary disabled" disabled><i class="fa fa-shield">&nbsp;</i>Internal</a>
+                                </li>
+                            </ul>
+
+                            <p class="interval">Date: <strong><a href="#">May 2020 - present</a></strong></p>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times">&nbsp;</i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- precompiled -->
+    <div class="portfolio-modal modal fade" id="precompiled" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="previous-modal" data-toggle="modal" data-dismiss="modal" data-target="#scheduler">
+                <i class="fa fa-angle-left fa-5x"></i>
+            </div>
+
+            <div class="next-modal" data-toggle="modal" data-dismiss="modal" data-target="#shipit">
+                <i class="fa fa-angle-right fa-5x"></i>
+            </div>
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Precompiled kmod</h2>
+                            <hr class="star-primary">
+                            <img src="img/pre-compiled.png" class="img-responsive img-centered" alt="">
+                            <p><em>DNF modularity streams to manage packaged driver kernel modules compiled (without linking) against specific kernels</em></p>
+
+                            <ul class="list-inline item-details">
+                                <li>
+                                    <a id="rpm1" href="#" class="btn btn-default"><i class="fa fa-bullhorn">&nbsp;</i>NVIDIA</a>
+                                    <a id="rpm2" href="#" class="btn btn-primary"><i class="fa fa-github">&nbsp;</i>Github</a>
+                                    <a id="rpm3" href="#" class="btn btn-success"><i class="fa fa-leaf">&nbsp;</i>GTC</a>
+                                    <a id="rpm4" href="#" class="btn btn-danger"><i class="fa fa-heart">&nbsp;</i>RH Summit</a>
+                                    <a id="rpm5" href="#" class="btn btn-info"><i class="fa fa-github-square">&nbsp;</i>Github</a>
+                                </li>
+                            </ul>
+
+                            <p class="interval">Date: <strong><a href="#">Dec 2018 - Oct 2020</a></strong></p>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times">&nbsp;</i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- shipit -->
+    <div class="portfolio-modal modal fade" id="shipit" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="previous-modal" data-toggle="modal" data-dismiss="modal" data-target="#precompiled">
+                <i class="fa fa-angle-left fa-5x"></i>
+            </div>
+
+            <div class="next-modal" data-toggle="modal" data-dismiss="modal" data-target="#jb-livecd">
+                <i class="fa fa-angle-right fa-5x"></i>
+            </div>
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>ShipIt</h2>
+                            <hr class="star-primary">
+                            <img src="img/shi-pi-t.png" class="img-responsive img-centered" alt="">
+                            <p><em>WebUI for building release candidates from component versions</em></p>
+
+                            <ul class="list-inline item-details">
+                                <li>
+                                    <a href="#" class="btn btn-primary disabled" disabled><i class="fa fa-shield">&nbsp;</i>Internal</a>
+                                </li>
+                            </ul>
+
+                            <p class="interval">Date: <strong><a href="#">Sep 2018 - present</a></strong></p>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times">&nbsp;</i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- justbrowsing -->
     <div class="portfolio-modal modal fade" id="jb-livecd" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
+            <div class="previous-modal" data-toggle="modal" data-dismiss="modal" data-target="#shipit">
+                <i class="fa fa-angle-left fa-5x"></i>
+            </div>
+
+            <div class="next-modal" data-toggle="modal" data-dismiss="modal" data-target="#jb-webapps">
+                <i class="fa fa-angle-right fa-5x"></i>
+            </div>
             <div class="close-modal" data-dismiss="modal">
                 <div class="lr">
                     <div class="rl">
@@ -451,6 +624,7 @@
 
                                 </div>
                             </div>
+                            <img src="img/magazine.png" class="panel-img list-group-item small" alt="magazines" />
 
                             <p class="interval">Date: <strong><a href="#">Dec 2012 - Feb 2015</a></strong></p>
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times">&nbsp;</i> Close</button>
@@ -464,6 +638,13 @@
     <!-- webapps -->
     <div class="portfolio-modal modal fade" id="jb-webapps" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
+            <div class="previous-modal" data-toggle="modal" data-dismiss="modal" data-target="#jb-livecd">
+                <i class="fa fa-angle-left fa-5x"></i>
+            </div>
+
+            <div class="next-modal" data-toggle="modal" data-dismiss="modal" data-target="#apacman">
+                <i class="fa fa-angle-right fa-5x"></i>
+            </div>
             <div class="close-modal" data-dismiss="modal">
                 <div class="lr">
                     <div class="rl">
@@ -515,6 +696,13 @@
     <!-- apacman -->
     <div class="portfolio-modal modal fade" id="apacman" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
+            <div class="previous-modal" data-toggle="modal" data-dismiss="modal" data-target="#jb-webapps">
+                <i class="fa fa-angle-left fa-5x"></i>
+            </div>
+
+            <div class="next-modal" data-toggle="modal" data-dismiss="modal" data-target="#guesswhat">
+                <i class="fa fa-angle-right fa-5x"></i>
+            </div>
             <div class="close-modal" data-dismiss="modal">
                 <div class="lr">
                     <div class="rl">
@@ -551,6 +739,13 @@
     <!-- guesswhat -->
     <div class="portfolio-modal modal fade" id="guesswhat" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
+            <div class="previous-modal" data-toggle="modal" data-dismiss="modal" data-target="#apacman">
+                <i class="fa fa-angle-left fa-5x"></i>
+            </div>
+
+            <div class="next-modal" data-toggle="modal" data-dismiss="modal" data-target="#photothief">
+                <i class="fa fa-angle-right fa-5x"></i>
+            </div>
             <div class="close-modal" data-dismiss="modal">
                 <div class="lr">
                     <div class="rl">
@@ -616,6 +811,13 @@
     <!-- photothief -->
     <div class="portfolio-modal modal fade" id="photothief" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
+            <div class="previous-modal" data-toggle="modal" data-dismiss="modal" data-target="#guesswhat">
+                <i class="fa fa-angle-left fa-5x"></i>
+            </div>
+
+            <div class="next-modal" data-toggle="modal" data-dismiss="modal" data-target="#timeme">
+                <i class="fa fa-angle-right fa-5x"></i>
+            </div>
             <div class="close-modal" data-dismiss="modal">
                 <div class="lr">
                     <div class="rl">
@@ -666,6 +868,13 @@
     <!-- timeme -->
     <div class="portfolio-modal modal fade" id="timeme" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
+            <div class="previous-modal" data-toggle="modal" data-dismiss="modal" data-target="#photothief">
+                <i class="fa fa-angle-left fa-5x"></i>
+            </div>
+
+            <div class="next-modal" data-toggle="modal" data-dismiss="modal" data-target="#backpackerpro">
+                <i class="fa fa-angle-right fa-5x"></i>
+            </div>
             <div class="close-modal" data-dismiss="modal">
                 <div class="lr">
                     <div class="rl">
@@ -702,6 +911,13 @@
     <!-- backpackerpro -->
     <div class="portfolio-modal modal fade" id="backpackerpro" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
+            <div class="previous-modal" data-toggle="modal" data-dismiss="modal" data-target="#timeme">
+                <i class="fa fa-angle-left fa-5x"></i>
+            </div>
+
+            <div class="next-modal" data-toggle="modal" data-dismiss="modal" data-target="#pycheckmate">
+                <i class="fa fa-angle-right fa-5x"></i>
+            </div>
             <div class="close-modal" data-dismiss="modal">
                 <div class="lr">
                     <div class="rl">
@@ -738,6 +954,13 @@
     <!-- pycheckmate -->
     <div class="portfolio-modal modal fade" id="pycheckmate" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
+            <div class="previous-modal" data-toggle="modal" data-dismiss="modal" data-target="#backpackerpro">
+                <i class="fa fa-angle-left fa-5x"></i>
+            </div>
+
+            <div class="next-modal" data-toggle="modal" data-dismiss="modal" data-target="#hardware">
+                <i class="fa fa-angle-right fa-5x"></i>
+            </div>
             <div class="close-modal" data-dismiss="modal">
                 <div class="lr">
                     <div class="rl">
@@ -774,6 +997,13 @@
     <!-- hardware -->
     <div class="portfolio-modal modal fade" id="hardware" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
+            <div class="previous-modal" data-toggle="modal" data-dismiss="modal" data-target="#pycheckmate">
+                <i class="fa fa-angle-left fa-5x"></i>
+            </div>
+
+            <div class="next-modal" data-toggle="modal" data-dismiss="modal" data-target="#scheduler">
+                <i class="fa fa-angle-right fa-5x"></i>
+            </div>
             <div class="close-modal" data-dismiss="modal">
                 <div class="lr">
                     <div class="rl">

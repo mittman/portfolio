@@ -5,8 +5,8 @@
 var main = function() {
     "use strict";
 
-    var brp = [ "aHR0cDovL2p1c3Ricm93c2luZ", "y5pbmZv", "Cg==", "L2FkdmFuY2VkLyN", "zZW50cnkK", "leHRlbnNpb25zCg==", "sb2NhbGUK" ];
-    var ghx = [ "aHR0cHM6Ly9naXRodWIuY29tL2", "1pdHRtYW4K", "9zaGF6YXJkCg==", "p1c3Ricm93c2luZwo=" ];
+    var brp = [ "aHR0cDovL2p1c3Ricm93c2luZ", "2xpbnV4LmNv", "bQ==", "bS9hZHZhbmNlZC8j", "c2VudHJ5", "ZXh0ZW5zaW9ucw==", "bG9jYWxl" ];
+    var ghx = [ "aHR0cHM6Ly9naXRodWIuY29tL2", "1pdHRtYW4K", "9zaGF6YXJkCg==", "p1c3Ricm93c2luZwo=", "ttaXR0bWFu" ];
     var jbx = [ "anVzdGJyb3dzaW5nLWNhbGN1bGF0b3IK", "anVzdGJyb3dzaW5nLXdhZ2VjbG9jawo=", "anVzdGJyb3dzaW5nLXRpbWVycwo=" ];
     var tbl = "2NkLnR1bWJsci5jb20vcG9zdC85MDMwNzExNDU2OS9jb25maWd1cmF0aW9uLWZpbGUK";
     var lx1 = "aHR0cDovL3d3dy5saW51eC1jb21tdW5pdHkuZGUvaW5kZXgucGhwL0ludGVybmFsL0FydGlrZWwvUHJpbnQtQXJ0aW";
@@ -16,11 +16,14 @@ var main = function() {
     var ytb = [ "aHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g/dj1", "sanEwZlN5UEZvNAo=", "FZXdGR1pEUk1IQQo=" ];
     var ops = [ "9zaGF6YXJkL2FwYWNtYW4K", "05lZW51QVZhcmdoZXNlL", "2d1ZXNzd2hhdAo=", "3Bob3RvdGhpZWYK" ];
     var pwz = [ "1pdHRtYW4v", "cHljaGVja21hdGUK", "QmFja1BhY2tlclBybwo=", "L3Jhdy9tYXN0ZXIvQmFja1BhY2tlclByby12MS5hcGsK" ];
+    var ghn = [ "aHR0cHM6Ly9naXRodWIuY29t", "L05WSURJQS95dW0tcGFja2FnaW5nL", "XByZWNvbXBpbGVkLWttb2Q=", "W52aWRpYS1wbHVnaW4=" ];
+    var dvz = [ "aHR0cHM6Ly9kZXZlbG9wZXIu", "ZG93bmxvYWQubnZpZGlhLmNvbS9wcmVzZW50YXRpb25zLzIwMjAv" ];
+    var rpm = [ "cmhzdW1taXQvU2ltcGxpZnlpbmdfTlZJRElBX0dQVV9Ecml2ZXJfRGVwbG95bWVudF9vbl9SSEVMLnBkZg==", "bnZpZGlhLmNvbS9ibG9nL3N0cmVhbWxpbmluZy1udmlkaWEtZHJpdmVyLWRlc", "GxveW1lbnQtb24tcmhlbC04LXdpdGgtbW9kdWxhcml0eS1zdHJlYW1z", "Z3RjLWZhbGwvUHJlY29tcGlsZWRfS2VybmVsX01vZHVsZXNfUGFja2FnaW5nX2FuZF9EZXBsb3ltZ", "W50X29uX1JIRUw4X3dpdGhfTW9kdWxhcml0eV9TdHJlYW1zLm1wNA==" ];
     var sfg = "aHR0cHM6Ly9zb3VyY2Vmb3JnZS5uZXQvcHJvamVjdHMvanVzdGJyb3dzaW5nL2ZpbGVzLwo=";
     var tm0 = "aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2dvb2dsZS1jb2RlLWFyY2hp";
     var tm1 = "dmUtZG93bmxvYWRzL3YyL2VjbGlwc2VsYWJzLm9yZy90aW1lbWUvVGltZU1lXzEuMS5qYXIK";
     var tm2 = "aHR0cHM6Ly9jb2RlLmdvb2dsZS5jb20vYXJjaGl2ZS9hL2VjbGlwc2VsYWJzLm9yZy9wL3RpbWVtZQo=";
-    var tux = "aHR0cDovL2xpbnV4Y3N1Zi5wdy8ja2V2aW4K";
+    var tux = "aHR0cHM6Ly9saW51eGNzdWYuZ2l0aHViLmlvLyNrZXZpbg==";
     var whoami = "S2V2aW4gTWl0dG1hbgo=";
     var xyz = "ZmlsZXMvcmVzdW1lLWFHbHlaV3RsZG1sdUxuaDVlaThLLnBkZgo=";
 
@@ -46,8 +49,8 @@ var main = function() {
     }
 
     var urlhash = (window.location.hash).split("#")[1];
-    var anchors = [ "jb-livecd", "jb-webapps", "apacman", "guesswhat", "photothief" ];
-    anchors = anchors.concat([ "timeme", "backpackerpro", "pycheckmate", "hardware" ]);
+    var anchors = [ "scheduler", "precompiled", "shipit", "jb-livecd", "jb-webapps", "apacman" ];
+    anchors = anchors.concat([ "guesswhat", "photothief", "timeme", "backpackerpro", "pycheckmate", "hardware" ]);
 
     if ($.inArray(urlhash, anchors) >= 0) {
         $("#" + urlhash).modal("show");
@@ -62,7 +65,8 @@ var main = function() {
     $(".name").text(decodeBase64(whoami));
 
     jQuery.get("img/circle.bin", function(data) {
-      $("#avatar").attr("src", "data:image/x-icon;base64," + data);
+      $("#you-spin-me-round").hide();
+      $("#avatar").attr("src", "data:image/x-icon;base64," + data).addClass("circle");
     });
 
     jQuery.get("files/note.bin", function(data) {
@@ -97,7 +101,14 @@ var main = function() {
     $("#yt1").attr("href", decodeBase64(ytb[0] + ytb[1]));
     $("#yt2").attr("href", decodeBase64(ytb[0] + ytb[2]));
 
-    $("#gh3").attr("href", jb0);
+    $("#rpm1").attr("href", decodeBase64(dvz[0] + rpm[1] + rpm[2]));
+    $("#rpm2").attr("href", decodeBase64(ghn[0] + ghn[1] + ghn[2]));
+    $("#rpm3").attr("href", decodeBase64(dvz[0] + dvz[1] + rpm[3] + rpm[4]));
+    $("#rpm4").attr("href", decodeBase64(dvz[0] + dvz[1] + rpm[0]));
+    $("#rpm5").attr("href", decodeBase64(ghn[0] + ghn[1] + ghn[3]));
+
+    $("#gh4").attr("href", decodeBase64(ghx[0] + ghx[4]));
+    $("#gh3").attr("href", decodeBase64(ghx[0] + ghx[3]));
     $("#gh2").attr("href", decodeBase64(ghx[0] + ghx[2]));
     $("#gh1").attr("href", decodeBase64(ghx[0] + ghx[1]));
 

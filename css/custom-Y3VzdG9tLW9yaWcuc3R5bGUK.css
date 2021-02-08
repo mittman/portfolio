@@ -2,6 +2,14 @@
  * Custom styles (http://hirekevin.xyz)
  */
 
+.disabled {
+  cursor: not-allowed;
+}
+
+a.btn.disabled, fieldset[disabled] a.btn {
+  pointer-events: unset;
+}
+
 .iframe-small {
   width: 200px;
   height: 260px;
@@ -101,4 +109,23 @@ hr.star-primary:after {
 .navbar-custom .navbar-toggle:hover,
 .navbar-custom .navbar-toggle:focus {
   background-color: #18B3F2;
+}
+
+.previous-modal {
+  cursor: pointer;
+  font-weight: lighter;
+  left: 10em;
+  position: absolute;
+  text-align: left;
+  top: 40%;
+
+}
+
+.next-modal {
+  cursor: pointer;
+  font-weight: lighter;
+  position: absolute;
+  right: 10em;
+  text-align: right;
+  top: 40%;
 }
