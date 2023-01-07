@@ -85,8 +85,8 @@
                     <div class="intro-text">
                         <span class="name">hirekevin.xyz</span>
                         <hr class="star-light">
-                        <span class="skills">Software Engineer - Linux Enthusiast - Web Developer</span>
-                        <p><i class="fa fa-mortar-board">&nbsp;</i> Bachelor of Science Degree in Computer Science from California State University, Fullerton (CSUF)</p>
+                        <span class="skills">Software Engineer - <i id="journey" style="cursor:pointer">Linux Enthusiast</i> - Web Developer</span>
+                        <!-- <p><i class="fa fa-mortar-board">&nbsp;</i> Bachelor of Science Degree in Computer Science from California State University, Fullerton (CSUF)</p> -->
                         <p><em><span id="announcement">Please enable Javascript</span></em></p>
                     </div>
                     <button type="button" id="btn-iframe" class="btn btn-default btn-lg" data-toggle="modal" data-target="#resume"><i class="fa fa-file-text">&nbsp;</i> View Resume</button>
@@ -350,7 +350,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        Last updated February 7, 2021
+                        Last updated January 7, 2023
                     </div>
                 </div>
             </div>
@@ -1069,5 +1069,14 @@
     <!-- Custom JavaScript -->
     <script src="js/browser.min.js"></script>
 
+    <script>
+    var odyssey = "My Linux journey started with a Knoppix LiveCD and soon after a crash course with Gentoo; ";
+    odyssey += "accidentally deleting my partition table and learning things the hard way. "
+    odyssey += "Found myself mesmerized by Maemo, a Debian-based computer in my pocket and the awesome community around it! ";
+    odyssey += "Then years of distro hopping, until finally culminating in building my own niche distro. ";
+    odyssey += "In order to deploy packages, found myself needing to augment and maintain a package manager. ";
+    odyssey += "Later those GNU/Linux skills helped launch my career, involving work with all manner of environments.";
+    document.getElementById('journey').title = odyssey;
+    </script>
 </body>
 </html>
